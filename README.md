@@ -12,20 +12,21 @@ Projet Java Maven "clé en main" pour démarrer avec **jMonkeyEngine 3** (LWJGL3
 ## Structure Maven
 
 ```
-src/
-  main/
-    java/         # sources Java
-    resources/    # ressources et assets
-  test/
-    java/         # tests
+w0rm0nk3y-example/
+  src/
+    main/
+      java/         # sources Java
+      resources/    # ressources et assets
+    test/
+      java/         # tests
 ```
 
 ## Commandes
 
 ```bash
-mvn clean test
-mvn clean package
-mvn -q exec:java
+mvn -pl w0rm0nk3y-example -am clean test
+mvn -pl w0rm0nk3y-example -am clean package
+mvn -pl w0rm0nk3y-example -am -q exec:java
 ```
 
 ## Import dans Eclipse
@@ -41,16 +42,16 @@ La classe principale est : `com.example.jmestarter.Main`.
 Pour exécuter via Maven :
 
 ```bash
-mvn -q exec:java
+mvn -pl w0rm0nk3y-example -am -q exec:java
 ```
 
 ## Assets (jME)
 
-- Placez vos assets dans `src/main/resources/assets/`.
-- Le classpath racine des assets est `src/main/resources`.
+- Placez vos assets dans `w0rm0nk3y-example/src/main/resources/assets/`.
+- Le classpath racine des assets est `w0rm0nk3y-example/src/main/resources`.
   Exemple de chargement : `assetManager.loadTexture("Textures/MyTexture.png")`.
 
 ## Notes
 
 - Le projet utilise **LWJGL3** via `jme3-lwjgl3`.
-- Le `pom.xml` centralise les versions (Java, jME, SLF4J) pour faciliter la maintenance.
+- Le `pom.xml` parent centralise les versions (Java, jME, SLF4J) pour faciliter la maintenance.
