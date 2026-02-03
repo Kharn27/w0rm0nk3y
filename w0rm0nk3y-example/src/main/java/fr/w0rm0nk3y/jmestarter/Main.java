@@ -1,4 +1,4 @@
-package com.example.jmestarter;
+package fr.w0rm0nk3y.jmestarter;
 
 public final class Main {
   private Main() {

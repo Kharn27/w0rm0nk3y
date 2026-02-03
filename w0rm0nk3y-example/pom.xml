@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.example</groupId>
+    <groupId>fr.w0rm0nk3y</groupId>
     <artifactId>w0rm0nk3y</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
@@ -16,7 +16,7 @@
   <description>Starter Maven module for jMonkeyEngine (jME3) with LWJGL3.</description>
 
   <properties>
-    <mainClass>com.example.jmestarter.Main</mainClass>
+    <mainClass>fr.w0rm0nk3y.jmestarter.Main</mainClass>
   </properties>
 
   <dependencies>

@@ -1,4 +1,4 @@
-package com.example.jmestarter;
+package fr.w0rm0nk3y.jmestarter;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.material.Material;
