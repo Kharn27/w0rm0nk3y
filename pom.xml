@@ -13,6 +13,7 @@
 
   <modules>
     <module>w0rm0nk3y-example</module>
+    <module>w0rm0nk3y-android-example</module>
   </modules>
 
   <properties>
@@ -40,6 +41,16 @@
       <dependency>
         <groupId>org.jmonkeyengine</groupId>
         <artifactId>jme3-lwjgl3</artifactId>
+        <version>${jme3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jmonkeyengine</groupId>
+        <artifactId>jme3-android</artifactId>
+        <version>${jme3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jmonkeyengine</groupId>
+        <artifactId>jme3-android-native</artifactId>
         <version>${jme3.version}</version>
       </dependency>
 
